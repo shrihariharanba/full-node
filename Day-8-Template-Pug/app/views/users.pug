@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title User Detail
+  body
+    section.container
+      for user in result
+        P #{user.fname}
+        P #{user.lname}
+        P #{user.username}
+        P #{user.email}
+        P #{user.mobile}
+        P #{user.password}
+        p
+         a(href='http://localhost:3002/user/detail/'+user._id) details

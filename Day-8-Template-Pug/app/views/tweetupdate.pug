@@ -1,0 +1,14 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        title Update Tweet
+    body
+        section.container
+            h1 Create a Product
+            form(method='put', action=`http://localhost:3002/tweet/v1/tweet/${tweet.id}`)
+                p
+                    input(type='text', name='message', value=`${tweet.message}`, placeholder='Message', required='')
+                p.submit
+                    input(type='submit', name='', value='update')
